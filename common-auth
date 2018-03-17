@@ -14,7 +14,7 @@
 # pam-auth-update(8) for details.
 
 
-auth 	required			pam_exec.so seteuid /home/uncoolshogun/Documents/projects/facelog/snaps.sh
+auth 	optional	pam_exec.so seteuid /home/uncoolshogun/Documents/projects/facelog/snaps.sh
 # here are the per-package modules (the "Primary" block)
 auth	[success=1 default=ignore]	pam_unix.so nullok_secure
 #auth 	[default=ignore]		pam_exec.so seteuid /home/uncoolshogun/Documents/projects/facelog/snaps.sh
